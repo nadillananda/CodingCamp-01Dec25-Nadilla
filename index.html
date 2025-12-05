@@ -1,15 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Nadilla</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadilla | Portfolio</title>
+  <link rel="icon" type="image/png" href="./css/img/revou-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="js/script.js"></script>
+  <header class="topbar">
+    <div class="brand">
+      <img src="./css/img/revou-logo.png" alt="RevoU" class="brand__logo" />
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <button class="nav__toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#home" class="nav__link is-active">Home</a></li>
+        <li><a href="#profile" class="nav__link">Profile</a></li>
+        <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li><a href="#contact" class="nav__link">Message</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero__content">
+        <p class="eyebrow">Hi, welcome to my portfolio.</p>
+        <h1>Nadilla Ananda</h1>
+        <p class="lede">Tech Enthusiast whom willing to adapt and currently learning Software Engineering. Here's my RevoU CCSE 011225 Assignment Simple Website Portfolio.</p>
+        <div class="hero__actions">
+          <a class="btn primary" href="#portfolio">View Works</a>
+          <a class="btn ghost" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="section profile">
+      <div class="section__header">
+        <p class="eyebrow">Profile</p>
+        <h2>Who I am</h2>
+        <p class="lede">I help teams launch thoughtful products through clear communication, reliable delivery, and a bias toward simplicity. Besides coding, i love to read and play instruments sometimes.</p>
+      </div>
+      <div class="profile__container">
+        <div class="profile__grid">
+          <div class="card info">
+            <h3>About</h3>
+            <p>I am a frontend engineer with a design-first mindset. I love building accessible, responsive interfaces and collaborating closely with designers, product, and backend teams.</p>
+          </div>
+          <div class="card info">
+            <h3>Skills</h3>
+            <ul class="tags">
+              <li>Typescript</li>
+              <li>TailwindCSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div class="card info">
+            <h3>Highlights</h3>
+            <ul class="list">
+              <li>One active years building responsive web,</li>
+              <li>Led design system rollout across teams,</li>
+              <li>Delivered 999+ client projects on time</li>
+            </ul>
+          </div>
+        </div>
+        <div class="profile__image">
+          <img src="./css/img/nadilla.jpg" alt="Nadilla Ananda" />
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <div class="section__header">
+        <p class="eyebrow">Portfolio</p>
+        <h2>What i have been done</h2>
+        <p class="lede">Simple snapshots of recent projects. Each focused on usability, speed, and visual calm.</p>
+      </div>
+      <div class="portfolio__grid">
+        <article class="card project">
+          <div class="project__thumb project--a">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Wellness Dashboard" />
+          </div>
+          <div class="project__body">
+            <div>
+              <h3>Wellness Dashboard</h3>
+              <p>Data visualization and habit tracking experience with intuitive navigation.</p>
+            </div>
+            <div class="tags small">
+              <span>React</span><span>TypeScript</span><span>Charts</span>
+            </div>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="project__thumb project--b">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop" alt="Travel Stories" />
+          </div>
+          <div class="project__body">
+            <div>
+              <h3>Travel Stories</h3>
+              <p>Editorial layout for immersive travel content with smooth reading experience.</p>
+            </div>
+            <div class="tags small">
+              <span>Next.js</span><span>CSS Grid</span><span>Performance</span>
+            </div>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="project__thumb project--c">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Market Launch" />
+          </div>
+          <div class="project__body">
+            <div>
+              <h3>Market Launch</h3>
+              <p>Landing page system for quick product launches with A/B testing hooks.</p>
+            </div>
+            <div class="tags small">
+              <span>HTML</span><span>Animations</span><span>Optimization</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section__header">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something</h2>
+        <p class="lede">Tell me about your project or say hello. I respond within one business day.</p>
+      </div>
+      <div class="contact__grid">
+        <div class="card info">
+          <h3>Details</h3>
+          <ul class="list">
+            <li>Email: <a href="mailto:nputriananda21@gmail.com">nputriananda21@gmail.com</a></li>
+            <li>Phone: <a href="tel:+6282117933082">+62 821-1793-3082</a></li>
+            <li>Location: Cikarang, Indonesia</li>
+          </ul>
+        </div>
+        <form id="contactForm" class="card form" aria-label="Contact form">
+          <div id="formErrors" class="form__errors" role="alert" aria-live="polite"></div>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <span class="error-message" id="nameError"></span>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+            <span class="error-message" id="emailError"></span>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" id="message" rows="4" placeholder="Your message" required></textarea>
+            <span class="error-message" id="messageError"></span>
+          </label>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+        <div id="formResult" class="card form__result" style="display: none;">
+          <h3>Form Submitted Successfully!</h3>
+          <div class="form__result-content">
+            <p><strong>Name:</strong> <span id="resultName"></span></p>
+            <p><strong>Email:</strong> <span id="resultEmail"></span></p>
+            <p><strong>Message:</strong></p>
+            <p id="resultMessage"></p>
+          </div>
+          <button class="btn ghost" id="resetForm" type="button">Submit Another</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>built and design by nadilla | © all rights deserved.</p>
+    <div class="socials">
+      <a href="#" aria-label="Visit GitHub">GitHub</a>
+      <a href="#" aria-label="Visit Instagram">Instagram</a>
+      <a href="#" aria-label="Visit LinkedIn">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
